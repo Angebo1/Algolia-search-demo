@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spencer & Williams Search Demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <header class="header">
+    <h1>Spencer & Williams Search Demo</h1>
+    <div id="searchbox"></div>
+    <div id="stats"></div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section>
+        <h3>Current Filters</h3>
+        <div id="current-refinements"></div>
+        <div id="clear-refinements"></div>
+      </section>
+
+      <section>
+        <h3>Categories</h3>
+        <div id="categories"></div>
+      </section>
+
+      <section>
+        <h3>Brand</h3>
+        <div id="brand"></div>
+      </section>
+
+      <section>
+        <h3>Price</h3>
+        <div id="price"></div>
+      </section>
+    </aside>
+
+    <section class="results">
+      <div id="hits"></div>
+      <div id="pagination"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.74.0"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
